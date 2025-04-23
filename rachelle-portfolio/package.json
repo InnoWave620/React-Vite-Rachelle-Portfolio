@@ -1,4 +1,5 @@
 {
+ " homepage" : "http://innowave620.github.io/React-Vite-Rachelle-Portfolio",
   "name": "rachelle-portfolio",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +8,10 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "predeploy": "npm run build && vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.0.0",
