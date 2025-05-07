@@ -39,16 +39,18 @@ const GallerySection = () => {
           {images.map((image, index) => (
             <div 
               key={index}
-              className="group relative overflow-hidden rounded-2xl transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 transform hover:scale-[1.03] cursor-pointer"
+              className="group relative overflow-hidden rounded-2xl transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 transform hover:scale-[1.03] cursor-pointer flex flex-col items-center justify-center bg-blue-900/30 p-2"
               onClick={() => setSelectedImage(image)}
             >
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 rounded-2xl"></div>
               
-              <img 
-                src={image} 
-                alt={`Gallery image ${index + 1}`} 
-                className="w-full h-[400px] object-cover object-center rounded-2xl border border-white/10 shadow-xl"
-              />
+              <div className="w-full h-full flex items-center justify-center overflow-hidden rounded-xl">
+                <img 
+                  src={image} 
+                  alt={`Gallery image ${index + 1}`} 
+                  className="max-w-full max-h-full object-contain rounded-xl border border-white/10 shadow-xl"
+                />
+              </div>
               
               <div className="absolute bottom-0 left-0 right-0 p-6 z-20 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
                 <div className="flex justify-between items-center">

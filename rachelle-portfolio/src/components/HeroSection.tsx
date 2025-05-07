@@ -1,6 +1,5 @@
 import fitnessVideo from '../assets/videos/ray gym.mp4';
 
-
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen py-24 overflow-hidden">
@@ -24,7 +23,7 @@ const HeroSection = () => {
           Professional fitness training and Modelling with a passionate artistic mind and athletic.
         </p>
         <p className="text-xl lg:text-2xl text-white mb-12 font-signature">
-          <span className="backdrop-blur-sm bg-white/10 px-6 py-3 rounded-lg border border-white/20">
+          <span className="text-blue-300 italic tracking-wide shadow-text">
             "once active always active"
           </span>
         </p>
