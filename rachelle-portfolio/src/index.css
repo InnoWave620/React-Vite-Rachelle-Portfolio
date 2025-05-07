@@ -94,3 +94,70 @@ html {
     padding-right: 1rem;
   }
 }
+
+/* Mobile navigation enhancements */
+@media (max-width: 768px) {
+  /* Improved smooth scrolling for mobile */
+  html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Smooth momentum scrolling on iOS */
+  }
+  
+  /* Enhanced transitions for mobile navigation */
+  .mobile-nav-overlay {
+    transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1), 
+                visibility 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
+  /* Luxury mobile menu items */
+  .mobile-nav-item {
+    position: relative;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1),
+                opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  /* Staggered animation for menu items */
+  .mobile-menu-open .mobile-nav-item {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  /* Delay each menu item for staggered effect */
+  .mobile-menu-open .mobile-nav-item:nth-child(1) { transition-delay: 0.1s; }
+  .mobile-menu-open .mobile-nav-item:nth-child(2) { transition-delay: 0.15s; }
+  .mobile-menu-open .mobile-nav-item:nth-child(3) { transition-delay: 0.2s; }
+  .mobile-menu-open .mobile-nav-item:nth-child(4) { transition-delay: 0.25s; }
+  .mobile-menu-open .mobile-nav-item:nth-child(5) { transition-delay: 0.3s; }
+  .mobile-menu-open .mobile-nav-item:nth-child(6) { transition-delay: 0.35s; }
+  .mobile-menu-open .mobile-nav-item:nth-child(7) { transition-delay: 0.4s; }
+  
+  /* Elegant active indicator for mobile */
+  .mobile-nav-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(59, 130, 246, 0.5), rgba(59, 130, 246, 1), rgba(59, 130, 246, 0.5));
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+  }
+  
+  /* Improved section transitions for mobile */
+  section {
+    transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1), 
+                transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  /* Prevent content shift on scroll */
+  * {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+}

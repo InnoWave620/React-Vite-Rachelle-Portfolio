@@ -31,10 +31,48 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Toggle body class when menu opens/closes
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add('mobile-menu-open');
+      document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    } else {
+      document.body.classList.remove('mobile-menu-open');
+      document.body.style.overflow = ''; // Restore scrolling
+    }
+  }, [isMenuOpen]);
+
   // Close menu when clicking a link
   const handleLinkClick = (sectionId: string) => {
-    setIsMenuOpen(false);
-    setActiveSection(sectionId);
+    const element = document.getElementById(sectionId);
+    
+    if (element) {
+      // Add a class to the body to trigger transition effects
+      document.body.classList.add('navigating');
+      
+      // Close menu with a slight delay for animation
+      setIsMenuOpen(false);
+      
+      // Smooth scroll with a slight delay for transition effects
+      setTimeout(() => {
+        // On mobile, use a more performant scrolling method
+        const yOffset = -80; // Header height offset
+        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        
+        window.scrollTo({
+          top: y,
+          behavior: 'smooth'
+        });
+        
+        // Set active section
+        setActiveSection(sectionId);
+        
+        // Remove the class after navigation completes
+        setTimeout(() => {
+          document.body.classList.remove('navigating');
+        }, 800);
+      }, 300);
+    }
   };
 
   return (
@@ -51,13 +89,15 @@ const Header = () => {
           <span className="text-white font-signature text-2xl">TrainWithRay</span>
         </a>
         
-        {/* Mobile menu button */}
+        {/* Mobile menu button with enhanced animation */}
         <button 
-          className="md:hidden text-white focus:outline-none"
+          className="md:hidden text-white focus:outline-none relative z-50 w-12 h-12 flex items-center justify-center"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
-          {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          <div className={`transition-all duration-300 ${isMenuOpen ? 'rotate-180 scale-110' : ''}`}>
+            {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          </div>
         </button>
         
         {/* Desktop navigation */}
@@ -128,16 +168,21 @@ const Header = () => {
         </nav>
       </div>
       
-      {/* Mobile navigation overlay */}
-      <div className={`fixed inset-0 bg-blue-900/95 z-40 flex flex-col items-center justify-center transition-all duration-500 backdrop-blur-md ${
+      {/* Enhanced mobile navigation overlay */}
+      <div className={`fixed inset-0 bg-gradient-to-br from-blue-900/95 to-black/95 z-40 flex flex-col items-center justify-center mobile-nav-overlay ${
         isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
       }`}>
-        <nav className="flex flex-col items-center space-y-6 text-xl">
+        {/* Subtle background pattern for luxury feel */}
+        <div className="absolute inset-0 opacity-5" style={{ 
+          backgroundImage: 'url("data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23ffffff" fill-opacity="0.2" fill-rule="evenodd"%3E%3Cpath d="M0 40L40 0H20L0 20M40 40V20L20 40"/%3E%3C/g%3E%3C/svg%3E")' 
+        }}></div>
+        
+        <nav className="flex flex-col items-center space-y-8 text-xl">
           <a 
             href="#" 
             onClick={() => handleLinkClick('home')} 
-            className={`text-white hover:text-blue-300 transition-colors ${
-              activeSection === 'home' ? 'text-blue-300 font-semibold' : ''
+            className={`mobile-nav-item text-white hover:text-blue-300 transition-colors ${
+              activeSection === 'home' ? 'active text-blue-300 font-semibold' : ''
             }`}
           >
             Home
@@ -145,8 +190,8 @@ const Header = () => {
           <a 
             href="#services" 
             onClick={() => handleLinkClick('services')} 
-            className={`text-white hover:text-blue-300 transition-colors ${
-              activeSection === 'services' ? 'text-blue-300 font-semibold' : ''
+            className={`mobile-nav-item text-white hover:text-blue-300 transition-colors ${
+              activeSection === 'services' ? 'active text-blue-300 font-semibold' : ''
             }`}
           >
             Services
@@ -154,8 +199,8 @@ const Header = () => {
           <a 
             href="#about" 
             onClick={() => handleLinkClick('about')} 
-            className={`text-white hover:text-blue-300 transition-colors ${
-              activeSection === 'about' ? 'text-blue-300 font-semibold' : ''
+            className={`mobile-nav-item text-white hover:text-blue-300 transition-colors ${
+              activeSection === 'about' ? 'active text-blue-300 font-semibold' : ''
             }`}
           >
             About
@@ -163,8 +208,8 @@ const Header = () => {
           <a 
             href="#gallery" 
             onClick={() => handleLinkClick('gallery')} 
-            className={`text-white hover:text-blue-300 transition-colors ${
-              activeSection === 'gallery' ? 'text-blue-300 font-semibold' : ''
+            className={`mobile-nav-item text-white hover:text-blue-300 transition-colors ${
+              activeSection === 'gallery' ? 'active text-blue-300 font-semibold' : ''
             }`}
           >
             Gallery
@@ -172,8 +217,8 @@ const Header = () => {
           <a 
             href="#pricing" 
             onClick={() => handleLinkClick('pricing')} 
-            className={`text-white hover:text-blue-300 transition-colors ${
-              activeSection === 'pricing' ? 'text-blue-300 font-semibold' : ''
+            className={`mobile-nav-item text-white hover:text-blue-300 transition-colors ${
+              activeSection === 'pricing' ? 'active text-blue-300 font-semibold' : ''
             }`}
           >
             Pricing
@@ -181,8 +226,8 @@ const Header = () => {
           <a 
             href="#testimonials" 
             onClick={() => handleLinkClick('testimonials')} 
-            className={`text-white hover:text-blue-300 transition-colors ${
-              activeSection === 'testimonials' ? 'text-blue-300 font-semibold' : ''
+            className={`mobile-nav-item text-white hover:text-blue-300 transition-colors ${
+              activeSection === 'testimonials' ? 'active text-blue-300 font-semibold' : ''
             }`}
           >
             Testimonials
@@ -190,8 +235,8 @@ const Header = () => {
           <a 
             href="#contact" 
             onClick={() => handleLinkClick('contact')} 
-            className={`text-white hover:text-blue-300 transition-colors ${
-              activeSection === 'contact' ? 'text-blue-300 font-semibold' : ''
+            className={`mobile-nav-item text-white hover:text-blue-300 transition-colors ${
+              activeSection === 'contact' ? 'active text-blue-300 font-semibold' : ''
             }`}
           >
             Contact
