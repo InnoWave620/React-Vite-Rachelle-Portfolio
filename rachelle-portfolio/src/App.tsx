@@ -13,11 +13,11 @@ const App = () => {
     <div className="bg-white">
       <Header />
       <HeroSection />
-      <AboutSection />
       <ServicesSection />
-      <TestimonialsSection />
+      <AboutSection />
       <GallerySection />
       <PricingSection />
+      <TestimonialsSection />
       <ContactForm />
       <Footer />
     </div>
