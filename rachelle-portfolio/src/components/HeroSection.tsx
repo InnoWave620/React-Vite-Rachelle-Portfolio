@@ -76,7 +76,7 @@ const HeroSection = () => {
           Transform Your <span className="text-blue-300">Body</span> & <span className="text-blue-300">Health</span>
         </h1>
         <p className="text-lg lg:text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
-          Professional fitness training and Modelling with a passionate artistic mind and athletic.
+          Professional fitness training and Modelling, passionate artistic mind and athletic.
         </p>
         <p className="text-xl lg:text-2xl text-white mb-12 font-signature">
           <span className="text-blue-300 italic tracking-wide shadow-text">
