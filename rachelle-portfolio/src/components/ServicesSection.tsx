@@ -58,8 +58,8 @@ const ServicesSection = () => {
                     <FaUsers size={18} />
                   </span>
                   <div>
-                    <h4 className="font-semibold text-xl mb-2 text-white group-hover:text-white transition-all duration-500">Group Classes</h4>
-                    <p className="opacity-80 text-lg">Energetic and motivating group sessions for all fitness levels</p>
+                    <h4 className="font-semibold text-xl mb-2 text-white group-hover:text-white transition-all duration-500">Training Plans</h4>
+                    <p className="opacity-80 text-lg">Elite expert training plans for all fitness levels</p>
                   </div>
                 </li>
                 

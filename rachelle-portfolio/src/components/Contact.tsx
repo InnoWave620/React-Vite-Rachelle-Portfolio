@@ -63,7 +63,7 @@ const ContactInfo = () => {
                       </div>
                       <div>
                         <h4 className="text-lg font-semibold text-white mb-1">Email</h4>
-                        <p className="text-blue-200 hover:text-blue-100 transition-colors duration-300">info@trainwithray.co.za</p>
+                        <p className="text-blue-200 hover:text-blue-100 transition-colors duration-300">rachelle@onceactive.co.za </p>
                       </div>
                     </div>
                     
@@ -84,7 +84,7 @@ const ContactInfo = () => {
                       <div>
                         <h4 className="text-lg font-semibold text-white mb-1">Hours</h4>
                         <p className="text-blue-200 hover:text-blue-100 transition-colors duration-300">
-                          Mon-Fri: 6am - 8pm<br />
+                          Mon-Fri: 6am - 5pm(can be rearranged)<br />
                           Sat: 7am - 5pm<br />
                           Sun: 8am - 2pm
                         </p>

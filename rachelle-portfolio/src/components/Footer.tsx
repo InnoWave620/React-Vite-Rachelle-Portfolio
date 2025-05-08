@@ -1,5 +1,6 @@
 import { FaInstagram, FaFacebook, FaYoutube, FaHeart } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
+import onceActiveLogo from '../assets/images/once active logo.jpg';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -16,6 +17,20 @@ const Footer = () => {
       }}></div>
       
       <div className="container mx-auto px-6 relative z-10">
+        {/* Logo with slogan */}
+        <div className="flex justify-center mb-10">
+          <div className="text-center">
+            <img 
+              src={onceActiveLogo} 
+              alt="Once Active Always Active" 
+              className="h-12 w-auto mx-auto rounded-full border-2 border-blue-300/30 shadow-lg mb-3"
+            />
+            <p className="text-xl font-signature text-blue-200">
+              "Once Active Always Active"
+            </p>
+          </div>
+        </div>
+        
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Logo and copyright */}
           <div className="mb-8 md:mb-0 text-center md:text-left">
@@ -69,22 +84,7 @@ const Footer = () => {
           </div>
         </div>
         
-        {/* Optional: Quick links */}
-        <div className="mt-10 pt-8 border-t border-blue-700/50">
-          <div className="flex flex-wrap justify-center md:justify-between gap-6 text-sm">
-            <div className="flex flex-wrap justify-center gap-6">
-              <a href="#" className="text-blue-200 hover:text-white transition-colors duration-300">Home</a>
-              <a href="#services" className="text-blue-200 hover:text-white transition-colors duration-300">Services</a>
-              <a href="#about" className="text-blue-200 hover:text-white transition-colors duration-300">About</a>
-              <a href="#gallery" className="text-blue-200 hover:text-white transition-colors duration-300">Gallery</a>
-              <a href="#pricing" className="text-blue-200 hover:text-white transition-colors duration-300">Pricing</a>
-              <a href="#contact" className="text-blue-200 hover:text-white transition-colors duration-300">Contact</a>
-            </div>
-            <p className="text-blue-300/70 text-xs">
-              Privacy Policy • Terms of Service
-            </p>
-          </div>
-        </div>
+        {/* Optional: Quick links - REMOVED */}
       </div>
     </footer>
   );

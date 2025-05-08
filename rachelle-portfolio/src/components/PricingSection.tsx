@@ -1,5 +1,5 @@
 import bgPic from '../assets/images/bg pic.jpg';
-import { FaDumbbell, FaCamera, FaCheck, FaCrown } from 'react-icons/fa';
+import { FaDumbbell, FaCamera, FaCheck, FaCrown, FaTimes } from 'react-icons/fa';
 
 const PricingSection = () => {
   return (
@@ -46,17 +46,17 @@ const PricingSection = () => {
               
               <div className="text-center mb-8">
                 <span className="text-blue-200 text-lg">Starting at</span>
-                <p className="text-5xl font-bold text-white my-2">R80</p>
+                <p className="text-5xl font-bold text-white my-2">R300/h</p>
                 <span className="text-blue-200">per session</span>
               </div>
               
               <ul className="space-y-4 mb-10 flex-grow">
-                <li className="flex items-center text-white/90 group-hover:text-white">
+                {/* <li className="flex items-center text-white/90 group-hover:text-white">
                   <span className="text-blue-300 mr-3 group-hover:text-white transition-all duration-500">
                     <FaCheck />
                   </span>
                   <span>Personalized training sessions</span>
-                </li>
+                </li> */}
                 <li className="flex items-center text-white/90 group-hover:text-white">
                   <span className="text-blue-300 mr-3 group-hover:text-white transition-all duration-500">
                     <FaCheck />
@@ -74,6 +74,18 @@ const PricingSection = () => {
                     <FaCheck />
                   </span>
                   <span>Progress tracking</span>
+                </li>
+                <li className="flex items-center text-white/90 group-hover:text-white">
+                  <span className="text-blue-300 mr-3 group-hover:text-white transition-all duration-500">
+                    <FaCheck />
+                  </span>
+                  <span>Assisted Stretching and Mobility</span>
+                </li>
+                <li className="flex items-center text-white/90 group-hover:text-white">
+                  <span className="text-blue-300 mr-3 group-hover:text-white transition-all duration-500">
+                    <FaCheck />
+                  </span>
+                  <span>Online Sessions(video call based)</span>
                 </li>
               </ul>
               
@@ -113,7 +125,7 @@ const PricingSection = () => {
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-center text-white">
                   <span className="text-yellow-300 mr-3">
-                    <FaCheck />
+                    <FaTimes />
                   </span>
                   <span>Full access to online workouts</span>
                 </li>
@@ -121,19 +133,19 @@ const PricingSection = () => {
                   <span className="text-yellow-300 mr-3">
                     <FaCheck />
                   </span>
-                  <span>Personalized fitness assessment</span>
+                  <span>Four complementary sessions</span>
                 </li>
                 <li className="flex items-center text-white">
                   <span className="text-yellow-300 mr-3">
                     <FaCheck />
                   </span>
-                  <span>One virtual training session</span>
+                  <span>Free consultation</span>
                 </li>
                 <li className="flex items-center text-white">
                   <span className="text-yellow-300 mr-3">
                     <FaCheck />
                   </span>
-                  <span>Transition to paid plan after week</span>
+                  <span>Access to Gym facilities</span>
                 </li>
                 <li className="flex items-center text-white">
                   <span className="text-yellow-300 mr-3">
@@ -167,7 +179,7 @@ const PricingSection = () => {
               
               <div className="text-center mb-8">
                 <span className="text-blue-200 text-lg">Starting at</span>
-                <p className="text-5xl font-bold text-white my-2">R80</p>
+                <p className="text-5xl font-bold text-white my-2">R600/h</p>
                 <span className="text-blue-200">per hour</span>
               </div>
               
@@ -195,6 +207,12 @@ const PricingSection = () => {
                     <FaCheck />
                   </span>
                   <span>Brand collaborations</span>
+                </li>
+                <li className="flex items-center text-white/90 group-hover:text-white">
+                  <span className="text-blue-300 mr-3 group-hover:text-white transition-all duration-500">
+                    <FaCheck />
+                  </span>
+                  <span>Social Media Campaigns</span>
                 </li>
               </ul>
               
