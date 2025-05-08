@@ -78,8 +78,8 @@ const ServicesSection = () => {
                     <FaLaptop size={18} />
                   </span>
                   <div>
-                    <h4 className="font-semibold text-xl mb-2 text-white group-hover:text-white transition-all duration-500">Online Programs</h4>
-                    <p className="opacity-80 text-lg">Remote training options with the same personalized attention</p>
+                    <h4 className="font-semibold text-xl mb-2 text-white group-hover:text-white transition-all duration-500">Online Sessions</h4>
+                    <p className="opacity-80 text-lg">Remote based training options with the same personalized attention</p>
                   </div>
                 </li>
               </ul>
