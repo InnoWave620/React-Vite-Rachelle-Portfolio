@@ -105,8 +105,7 @@ const Header = () => {
               <img 
                 src={onceActiveLogo} 
                 alt="Once Active Always Active" 
-                className="w-auto h-5 sm:h-7 object-cover object-bottom transition-all duration-300 group-hover:opacity-90 rounded-lg"
-                style={{ marginTop: "-5px" }}
+                className="w-auto h-5 sm:h-7 object-contain transition-all duration-300 group-hover:opacity-90 rounded-lg"
               />
             </div>
           </a>

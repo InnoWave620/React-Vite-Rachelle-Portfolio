@@ -1,5 +1,5 @@
 import Sarah from '../assets/images/Sarahtesti.jpeg';
-import Testymonial from '../assets/images/testymonial.avif';
+import Testymonial from '../assets/images/vanvyk.avif';
 import Amanda from '../assets/images/Aesthetic Gym Pictures.jpeg';
 import bgPic from '../assets/images/bg pic.jpg'; // Import background image
 import { FaQuoteLeft, FaQuoteRight, FaStar } from 'react-icons/fa'; // Import icons
