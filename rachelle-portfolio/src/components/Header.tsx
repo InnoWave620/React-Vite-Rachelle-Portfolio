@@ -83,14 +83,14 @@ const Header = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center space-x-4">
           <a href="#" className="flex items-center space-x-2">
-            <div className="h-10 w-10 border-2 border-blue-300/30 rounded-md overflow-hidden shadow-md">
+            <div className="h-8 sm:h-10 w-8 sm:w-10 border-2 border-blue-300/30 rounded-md overflow-hidden shadow-md">
               <img 
                 src={rayLogo} 
                 alt="TrainWithRay Logo" 
                 className="h-full w-full object-cover"
               />
             </div>
-            <span className="text-white font-signature text-2xl">Elite training by Rachelle</span>
+            <span className="text-white font-signature text-xl sm:text-2xl">Elite training by Rachelle</span>
           </a>
           
           {/* Make Once Active logo visible on all devices */}
@@ -101,11 +101,11 @@ const Header = () => {
             className="flex items-center space-x-1 group hover:opacity-90 transition-all duration-300"
             aria-label="Visit Once Active Gym website"
           >
-            <div className="h-8 w-auto overflow-hidden relative rounded-lg">
+            <div className="h-6 sm:h-8 w-auto overflow-hidden relative rounded-lg">
               <img 
                 src={onceActiveLogo} 
                 alt="Once Active Always Active" 
-                className="w-auto h-7 object-cover object-bottom transition-all duration-300 group-hover:opacity-90 rounded-lg"
+                className="w-auto h-5 sm:h-7 object-cover object-bottom transition-all duration-300 group-hover:opacity-90 rounded-lg"
                 style={{ marginTop: "-5px" }}
               />
             </div>
