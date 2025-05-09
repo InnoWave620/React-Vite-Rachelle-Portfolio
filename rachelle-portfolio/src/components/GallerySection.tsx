@@ -5,6 +5,7 @@ import Gallery4 from '../assets/images/gallery4.jpg';
 import bgPic from '../assets/images/bg pic.jpg'; // Import background image
 import { useState } from 'react';
 import { FaArrowLeft, FaArrowRight, FaExpand } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const GallerySection = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -66,9 +67,9 @@ const GallerySection = () => {
         
         {/* View more button */}
         <div className="mt-16 text-center">
-          <button className="px-10 py-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-full font-bold text-lg hover:from-blue-700 hover:to-blue-900 transition-all duration-300 shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-1 border border-blue-400/30">
+          <Link to="/gallery" className="inline-block px-10 py-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-full font-bold text-lg hover:from-blue-700 hover:to-blue-900 transition-all duration-300 shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-1 border border-blue-400/30">
             View Full Gallery
-          </button>
+          </Link>
         </div>
       </div>
       

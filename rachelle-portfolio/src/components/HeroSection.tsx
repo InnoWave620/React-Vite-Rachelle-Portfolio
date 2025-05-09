@@ -76,7 +76,8 @@ const HeroSection = () => {
           RACHELLE <span className="text-blue-300">ELITE</span> PERSONAL <span className="text-blue-300">TRAINING</span>
         </h1>
         <p className="text-lg lg:text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
-          Professional fitness training and Modelling, passionate artistic mind and athletic.
+        Professional Fitness Training & Modelling
+        Holistic, Artistic & Athletic
         </p>
         <p className="text-xl lg:text-2xl text-white mb-12 font-signature">
           <span className="text-blue-300 italic tracking-wide shadow-text">

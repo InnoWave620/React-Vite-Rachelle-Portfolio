@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
@@ -8,7 +9,7 @@ import GallerySection from './components/GallerySection';
 import PricingSection from './components/PricingSection';
 import ContactForm from './components/Contact';
 import Footer from './components/Footer';
-// import SectionIndicator from './components/SectionIndicator';
+import FullGalleryPage from './components/FullGalleryPage';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -35,18 +36,26 @@ const App = () => {
   }, []);
 
   return (
-    <div className="bg-white">
-      <Header />
-      <HeroSection />
-      <ServicesSection />
-      <AboutSection />
-      <GallerySection />
-      <PricingSection />
-      <TestimonialsSection />
-      <ContactForm />
-      <Footer />
-      {/* <SectionIndicator activeSection={activeSection} /> */}
-    </div>
+    <Router basename="/React-Vite-Rachelle-Portfolio">
+      <div className="bg-white">
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Header />
+              <HeroSection />
+              <ServicesSection />
+              <AboutSection />
+              <GallerySection />
+              <PricingSection />
+              <TestimonialsSection />
+              <ContactForm />
+              <Footer />
+            </>
+          } />
+          <Route path="/gallery" element={<FullGalleryPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 

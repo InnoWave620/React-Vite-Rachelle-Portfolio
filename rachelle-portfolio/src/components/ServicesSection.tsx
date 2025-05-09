@@ -23,7 +23,7 @@ const ServicesSection = () => {
             <div className="absolute w-32 h-1 bg-gradient-to-r from-blue-400 to-blue-300 left-1/2 -bottom-4 transform -translate-x-1/2 rounded-full"></div>
           </h2>
           <p className="text-blue-100 text-xl mt-8 max-w-2xl mx-auto leading-relaxed">
-            Elevate your fitness journey and modeling career with personalized, expert services
+          Elevating your Health Journey with my holistic client-centric approach & Elevating your brand with my professional modelling services
           </p>
         </div>
         

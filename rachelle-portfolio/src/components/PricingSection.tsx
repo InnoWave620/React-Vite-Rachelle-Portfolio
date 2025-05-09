@@ -113,7 +113,7 @@ const PricingSection = () => {
                 </div>
               </div>
               
-              <h3 className="text-2xl font-bold mb-2 text-white text-center">1-Week Free Trial</h3>
+              <h3 className="text-2xl font-bold mb-2 text-white text-center">2-Weeks Free Trial</h3>
               <div className="w-16 h-1 bg-white/50 mx-auto mb-6 rounded-full"></div>
               
               <div className="text-center mb-8">

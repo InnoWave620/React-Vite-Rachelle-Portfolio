@@ -53,7 +53,7 @@ const ContactInfo = () => {
                       </div>
                       <div>
                         <h4 className="text-lg font-semibold text-white mb-1">Phone</h4>
-                        <p className="text-blue-200 hover:text-blue-100 transition-colors duration-300">+27 82 123 4567</p>
+                        <p className="text-blue-200 hover:text-blue-100 transition-colors duration-300">+27605486585</p>
                       </div>
                     </div>
                     
@@ -85,8 +85,8 @@ const ContactInfo = () => {
                         <h4 className="text-lg font-semibold text-white mb-1">Hours</h4>
                         <p className="text-blue-200 hover:text-blue-100 transition-colors duration-300">
                           Mon-Fri: 6am - 5pm(can be rearranged)<br />
-                          Sat: 7am - 5pm<br />
-                          Sun: 8am - 2pm
+                          Sat: 8am - 11am<br />
+                          Sun: Closed
                         </p>
                       </div>
                     </div>

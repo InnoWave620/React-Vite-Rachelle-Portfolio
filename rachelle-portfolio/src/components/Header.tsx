@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import rayLogo from '../assets/images/raylogo-Photoroom.png';
+import onceActiveLogo from '../assets/images/once active logo.jpg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -80,14 +81,35 @@ const Header = () => {
       isScrolled ? 'bg-blue-900/95 shadow-lg py-2 backdrop-blur-md' : 'bg-transparent py-4'
     }`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#" className="flex items-center space-x-2">
-          <img 
-            src={rayLogo} 
-            alt="TrainWithRay Logo" 
-            className="h-10 w-auto"
-          />
-          <span className="text-white font-signature text-2xl">TrainWithRay</span>
-        </a>
+        <div className="flex items-center space-x-4">
+          <a href="#" className="flex items-center space-x-2">
+            <img 
+              src={rayLogo} 
+              alt="TrainWithRay Logo" 
+              className="h-10 w-auto"
+            />
+            <span className="text-white font-signature text-2xl">TrainWithRay</span>
+          </a>
+          
+          <div className="hidden md:flex items-center space-x-2">
+            <a 
+              href="https://www.onceactivegym.co.za/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center space-x-2 group hover:opacity-90 transition-all duration-300"
+              aria-label="Visit Once Active Gym website"
+            >
+              <img 
+                src={onceActiveLogo} 
+                alt="Once Active Always Active" 
+                className="h-8 w-auto rounded-full border border-blue-300/30 group-hover:border-blue-300/60 transition-all duration-300 shadow-sm group-hover:shadow-blue-400/30"
+              />
+              {/* <span className="text-blue-200 font-signature text-sm group-hover:text-blue-100 transition-colors duration-300 relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-blue-300/60 after:transition-all after:duration-300 group-hover:after:w-full">
+                "Once Active Always Active"
+              </span> */}
+            </a>
+          </div>
+        </div>
         
         {/* Mobile menu button with enhanced animation */}
         <button 
