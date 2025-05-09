@@ -84,9 +84,8 @@ const TestimonialsSection = () => {
               </div>
               
               <p className="text-white/90 italic text-lg mb-8 flex-grow group-hover:text-white transition-all duration-500">
-                "After struggling with my weight loss for years, Rachelle's techniques helped me break through in no time! Her holistic approach addressed all aspects of my health journey."
+              "Rachelle is an amazing trainer who truly cares. In just three months, she’s helped me get stronger, more confident, and master proper technique. Her personalized, patient approach makes workouts effective and enjoyable. Highly recommend for beginners or anyone wanting a solid foundation!🌸"
               </p>
-              
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
                   <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-blue-300/30 shadow-lg mr-4">
@@ -97,8 +96,8 @@ const TestimonialsSection = () => {
                     />
                   </div>
                   <div>
-                    <h4 className="font-bold text-white text-xl">Yolanda T.</h4>
-                    <p className="text-blue-200 text-sm">Weight Loss Client • 6 months</p>
+                    <h4 className="font-bold text-white text-xl">Tahlita Van Wyk.</h4>
+                    <p className="text-blue-200 text-sm">Weight Loss Client • 3 months</p>
                   </div>
                 </div>
                 

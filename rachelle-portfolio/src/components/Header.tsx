@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import rayLogo from '../assets/images/raylogo-Photoroom.png';
+import rayLogo from '../assets/images/rlogo.png';
 import onceActiveLogo from '../assets/images/once active logo.jpg';
 
 const Header = () => {
@@ -83,32 +83,33 @@ const Header = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center space-x-4">
           <a href="#" className="flex items-center space-x-2">
-            <img 
-              src={rayLogo} 
-              alt="TrainWithRay Logo" 
-              className="h-10 w-auto"
-            />
-            <span className="text-white font-signature text-2xl">TrainWithRay</span>
+            <div className="h-10 w-10 border-2 border-blue-300/30 rounded-md overflow-hidden shadow-md">
+              <img 
+                src={rayLogo} 
+                alt="TrainWithRay Logo" 
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <span className="text-white font-signature text-2xl">Elite training by Rachelle</span>
           </a>
           
-          <div className="hidden md:flex items-center space-x-2">
-            <a 
-              href="https://www.onceactivegym.co.za/" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="flex items-center space-x-2 group hover:opacity-90 transition-all duration-300"
-              aria-label="Visit Once Active Gym website"
-            >
+          {/* Make Once Active logo visible on all devices */}
+          <a 
+            href="https://www.onceactivegym.co.za/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex items-center space-x-1 group hover:opacity-90 transition-all duration-300"
+            aria-label="Visit Once Active Gym website"
+          >
+            <div className="h-8 w-auto overflow-hidden relative rounded-lg">
               <img 
                 src={onceActiveLogo} 
                 alt="Once Active Always Active" 
-                className="h-8 w-auto rounded-full border border-blue-300/30 group-hover:border-blue-300/60 transition-all duration-300 shadow-sm group-hover:shadow-blue-400/30"
+                className="w-auto h-7 object-cover object-bottom transition-all duration-300 group-hover:opacity-90 rounded-lg"
+                style={{ marginTop: "-5px" }}
               />
-              {/* <span className="text-blue-200 font-signature text-sm group-hover:text-blue-100 transition-colors duration-300 relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-blue-300/60 after:transition-all after:duration-300 group-hover:after:w-full">
-                "Once Active Always Active"
-              </span> */}
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
         
         {/* Mobile menu button with enhanced animation */}

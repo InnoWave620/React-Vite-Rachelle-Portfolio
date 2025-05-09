@@ -85,8 +85,8 @@ const ServicesSection = () => {
               </ul>
               
               <div className="mt-12 text-center">
-                <a href="#pricing" className="inline-block py-4 px-10 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full font-semibold shadow-lg hover:shadow-blue-500/50 transition-all duration-300 transform hover:-translate-y-1 text-lg border border-blue-400/30">
-                  View Pricing
+                <a href="#contact" className="inline-block py-4 px-10 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full font-semibold shadow-lg hover:shadow-blue-500/50 transition-all duration-300 transform hover:-translate-y-1 text-lg border border-blue-400/30">
+                  Book Now
                 </a>
               </div>
             </div>
@@ -149,8 +149,8 @@ const ServicesSection = () => {
               </ul>
               
               <div className="mt-12 text-center">
-                <a href="#pricing" className="inline-block py-4 px-10 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full font-semibold shadow-lg hover:shadow-blue-500/50 transition-all duration-300 transform hover:-translate-y-1 text-lg border border-blue-400/30">
-                  View Pricing
+                <a href="#contact" className="inline-block py-4 px-10 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full font-semibold shadow-lg hover:shadow-blue-500/50 transition-all duration-300 transform hover:-translate-y-1 text-lg border border-blue-400/30">
+                  Book Now
                 </a>
               </div>
             </div>

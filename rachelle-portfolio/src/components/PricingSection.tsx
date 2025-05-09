@@ -89,9 +89,12 @@ const PricingSection = () => {
                 </li>
               </ul>
               
-              <button className="w-full py-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full font-bold hover:from-blue-600 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-1 border border-blue-400/30">
+              <a 
+                href="#contact" 
+                className="w-full py-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full font-bold hover:from-blue-600 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-1 border border-blue-400/30 inline-block text-center"
+              >
                 Book Training
-              </button>
+              </a>
             </div>
           </div>
           
@@ -155,9 +158,12 @@ const PricingSection = () => {
                 </li>
               </ul>
               
-              <button className="w-full py-4 bg-white text-blue-700 rounded-full font-bold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-white/30 transform hover:-translate-y-1">
+              <a 
+                href="#contact" 
+                className="w-full py-4 bg-white text-blue-700 rounded-full font-bold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-white/30 transform hover:-translate-y-1 inline-block text-center"
+              >
                 Start Free Trial
-              </button>
+              </a>
             </div>
           </div>
           
@@ -216,9 +222,12 @@ const PricingSection = () => {
                 </li>
               </ul>
               
-              <button className="w-full py-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full font-bold hover:from-blue-600 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-1 border border-blue-400/30">
+              <a 
+                href="#contact" 
+                className="w-full py-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full font-bold hover:from-blue-600 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-1 border border-blue-400/30 inline-block text-center"
+              >
                 Book Modeling
-              </button>
+              </a>
             </div>
           </div>
         </div>
