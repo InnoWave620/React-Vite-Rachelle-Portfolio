@@ -73,47 +73,47 @@ const AboutSection = () => {
               </p>
             </div>
 
-            <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-5">
-              <div className="bg-gradient-to-r from-blue-500/20 to-blue-600/10 p-4 rounded-xl flex items-center shadow-lg border border-blue-300/20 backdrop-blur-sm hover:from-blue-400/30 hover:to-blue-500/20 transition-all duration-300 transform hover:-translate-y-1">
-                <span className="text-blue-300 text-2xl mr-3">
+            <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-5 sm:gap-4 w-full max-w-xs sm:max-w-none mx-auto">
+              <div className="bg-gradient-to-r from-blue-500/20 to-blue-600/10 p-4 rounded-xl flex flex-col sm:flex-row items-center shadow-lg border border-blue-300/20 backdrop-blur-sm hover:from-blue-400/30 hover:to-blue-500/20 transition-all duration-300 transform hover:-translate-y-1 min-w-0">
+                <span className="text-blue-300 text-2xl mr-0 sm:mr-3 mb-2 sm:mb-0">
                   <FaDumbbell />
                 </span>
-                <span className="font-medium text-white">Strength Training</span>
+                <span className="font-medium text-white text-center sm:text-left break-words">Strength Training</span>
               </div>
               
-              <div className="bg-gradient-to-r from-blue-500/20 to-blue-600/10 p-4 rounded-xl flex items-center shadow-lg border border-blue-300/20 backdrop-blur-sm hover:from-blue-400/30 hover:to-blue-500/20 transition-all duration-300 transform hover:-translate-y-1">
-                <span className="text-blue-300 text-2xl mr-3">
+              <div className="bg-gradient-to-r from-blue-500/20 to-blue-600/10 p-4 rounded-xl flex flex-col sm:flex-row items-center shadow-lg border border-blue-300/20 backdrop-blur-sm hover:from-blue-400/30 hover:to-blue-500/20 transition-all duration-300 transform hover:-translate-y-1 min-w-0">
+                <span className="text-blue-300 text-2xl mr-0 sm:mr-3 mb-2 sm:mb-0">
                   <FaSwimmingPool />
                 </span>
-                <span className="font-medium text-white">Swimming</span>
+                <span className="font-medium text-white text-center sm:text-left break-words">Swimming</span>
               </div>
               
-              <div className="bg-gradient-to-r from-blue-500/20 to-blue-600/10 p-4 rounded-xl flex items-center shadow-lg border border-blue-300/20 backdrop-blur-sm hover:from-blue-400/30 hover:to-blue-500/20 transition-all duration-300 transform hover:-translate-y-1">
-                <span className="text-blue-300 text-2xl mr-3">
+              <div className="bg-gradient-to-r from-blue-500/20 to-blue-600/10 p-4 rounded-xl flex flex-col sm:flex-row items-center shadow-lg border border-blue-300/20 backdrop-blur-sm hover:from-blue-400/30 hover:to-blue-500/20 transition-all duration-300 transform hover:-translate-y-1 min-w-0">
+                <span className="text-blue-300 text-2xl mr-0 sm:mr-3 mb-2 sm:mb-0">
                   <FaRunning />
                 </span>
-                <span className="font-medium text-white">Cardio Conditioning</span>
+                <span className="font-medium text-white text-center sm:text-left break-words">Cardio Conditioning</span>
               </div>
               
-              <div className="bg-gradient-to-r from-blue-500/20 to-blue-600/10 p-4 rounded-xl flex items-center shadow-lg border border-blue-300/20 backdrop-blur-sm hover:from-blue-400/30 hover:to-blue-500/20 transition-all duration-300 transform hover:-translate-y-1">
-                <span className="text-blue-300 text-2xl mr-3">
+              <div className="bg-gradient-to-r from-blue-500/20 to-blue-600/10 p-4 rounded-xl flex flex-col sm:flex-row items-center shadow-lg border border-blue-300/20 backdrop-blur-sm hover:from-blue-400/30 hover:to-blue-500/20 transition-all duration-300 transform hover:-translate-y-1 min-w-0">
+                <span className="text-blue-300 text-2xl mr-0 sm:mr-3 mb-2 sm:mb-0">
                   <FaCertificate />
                 </span>
-                <span className="font-medium text-white">Certified Trainer</span>
+                <span className="font-medium text-white text-center sm:text-left break-words">Certified Trainer</span>
               </div>
               
-              <div className="bg-gradient-to-r from-blue-500/20 to-blue-600/10 p-4 rounded-xl flex items-center shadow-lg border border-blue-300/20 backdrop-blur-sm hover:from-blue-400/30 hover:to-blue-500/20 transition-all duration-300 transform hover:-translate-y-1">
-                <span className="text-blue-300 text-2xl mr-3">
+              <div className="bg-gradient-to-r from-blue-500/20 to-blue-600/10 p-4 rounded-xl flex flex-col sm:flex-row items-center shadow-lg border border-blue-300/20 backdrop-blur-sm hover:from-blue-400/30 hover:to-blue-500/20 transition-all duration-300 transform hover:-translate-y-1 min-w-0">
+                <span className="text-blue-300 text-2xl mr-0 sm:mr-3 mb-2 sm:mb-0">
                   <FaHeart />
                 </span>
-                <span className="font-medium text-white">Mental Wellness</span>
+                <span className="font-medium text-white text-center sm:text-left break-words">Mental Wellness</span>
               </div>
               
-              <div className="bg-gradient-to-r from-blue-500/20 to-blue-600/10 p-4 rounded-xl flex items-center shadow-lg border border-blue-300/20 backdrop-blur-sm hover:from-blue-400/30 hover:to-blue-500/20 transition-all duration-300 transform hover:-translate-y-1">
-                <span className="text-blue-300 text-2xl mr-3">
+              <div className="bg-gradient-to-r from-blue-500/20 to-blue-600/10 p-4 rounded-xl flex flex-col sm:flex-row items-center shadow-lg border border-blue-300/20 backdrop-blur-sm hover:from-blue-400/30 hover:to-blue-500/20 transition-all duration-300 transform hover:-translate-y-1 min-w-0">
+                <span className="text-blue-300 text-2xl mr-0 sm:mr-3 mb-2 sm:mb-0">
                   <FaUsers />
                 </span>
-                <span className="font-medium text-white">Client Support</span>
+                <span className="font-medium text-white text-center sm:text-left break-words">Client Support</span>
               </div>
             </div>
           </div>
